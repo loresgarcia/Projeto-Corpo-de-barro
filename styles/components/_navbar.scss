@@ -1,0 +1,36 @@
+@import '../abstract/variaveis';
+
+.home {
+    display: flex;
+    
+   
+}
+
+.logo-home {
+    display: inline;
+    width: 70px;
+    height: 70px;
+	display: inline-block;
+    margin: auto;
+	
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+    ul {
+        li {
+            display: inline-block;
+            padding: 1rem;
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                color: $cor-primaria;
+                &:hover {
+                    border-bottom: 2px solid $cor-secundaria;
+                }
+            }
+        }
+    }
+}
