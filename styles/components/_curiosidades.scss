@@ -28,3 +28,19 @@
     }
 }
 
+@media  screen and (max-width: 480px) {
+    #curiosidades {
+        padding: 1rem 0;
+        margin: 5px 0;
+        img {
+            width: 100vw;
+            object-fit: cover;
+        }
+        h4 {
+            padding: 1rem 1rem 0 1rem;
+        }
+        p {
+            padding: 1rem;
+        } 
+    }
+}

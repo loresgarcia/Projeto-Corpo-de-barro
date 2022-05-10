@@ -10,19 +10,29 @@
     align-items: center;
     opacity: 0.9;
     .inner-banner {
-    padding: 3rem;
-    background-color: $cor-secundaria;
-    opacity: 1.0;
-    border-radius: 45px;
-    h1 {
-        font-size: $tamanho-do-texto;
-        color: $cor-terciaria;
+        padding: 3rem;
+        background-color: $cor-secundaria;
+        opacity: 1.0;
+        border-radius: 45px;
+        h1 {
+            font-size: $tamanho-do-texto;
+            color: $cor-terciaria;
+        }
+        h2 {
+            font-size: $tamanho-do-texto / 2;
+            color: $cor-primaria;
+            padding-top: 4px;
+            text-align: center;
+        }
     }
-    h2 {
-        font-size: $tamanho-do-texto / 2;
-        color: $cor-primaria;
-        padding-top: 4px;
-        text-align: center;
-    }
+}
+@media screen and (max-width: 480px) {
+    .banner {
+        width: 100%;
+        .inner-banner {
+            box-sizing: border-box;
+            text-align: center;
+            width: 80%;
+        }
     }
 }

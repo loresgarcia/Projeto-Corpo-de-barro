@@ -1,9 +1,7 @@
 @import '../abstract/variaveis';
 
 .home {
-    display: flex;
-    
-   
+    display: flex;   
 }
 
 .logo-home {
@@ -32,5 +30,16 @@ nav {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
     }
 }
